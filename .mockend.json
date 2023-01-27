@@ -4,16 +4,25 @@
       "items": 10
     },
     "groupProgram": {
-      "string": {}
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
     },
     "categoryName": {
       "string": ["Math", "Biology", "English", "Bahasa Indonesia", "Social"]
     },
     "program": {
-      "string": {}
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
     },
     "sectionName": {
-      "string": {}
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
     },
     "duration": {
       "int": {
