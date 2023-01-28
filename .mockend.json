@@ -42,5 +42,75 @@
         "maxLength": 20
       }
     }
+  },
+  "Questionbank": {
+    "_": {
+      "items": 10
+    },
+    "institution": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "groupProgram": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "sectionName": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 10
+      }
+    },
+    "questionType": {
+      "boolean": {}
+    },
+    "question": {
+      "loremSentences": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "answer": {
+      "loremSentences": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "description": {
+      "loremSentences": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "choices": {
+      "hasMany": "Choice"
+    }
+  },
+  "Choice": {
+    "_": {
+      "items": 4
+    },
+    "orderNumber": {
+      "int": {
+        "min": 1,
+        "max": 4
+      }
+    },
+    "label": {
+      "string": ["A", "B", "C", "D"]
+    },
+    "answer": {
+      "loremParagraphs": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "answerKey": {
+      "boolean": {}
+    }
   }
 }
