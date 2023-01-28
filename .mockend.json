@@ -111,6 +111,9 @@
     },
     "answerKey": {
       "boolean": {}
+    },
+    "questionbank": {
+      "belongsTo": "Questionbank"
     }
   }
 }
