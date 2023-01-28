@@ -66,7 +66,7 @@
       }
     },
     "questionType": {
-      "boolean": {}
+      "string": ["OPTION", "ESSAY"]
     },
     "question": {
       "loremSentences": {
@@ -85,6 +85,15 @@
         "minLength": 5,
         "maxLength": 20
       }
+    },
+    "program": {
+      "int": {
+        "min": 1,
+        "max": 12
+      }
+    },
+    "status": {
+      "boolean": {}
     },
     "choices": {
       "hasMany": "Choice"
