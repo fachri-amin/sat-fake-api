@@ -59,6 +59,9 @@
         "maxLength": 20
       }
     },
+    "sectionId": {
+      "string": ["lorem", "ipsum"]
+    },
     "sectionName": {
       "loremWords": {
         "minLength": 5,
@@ -123,6 +126,50 @@
     },
     "questionbank": {
       "belongsTo": "Questionbank"
+    }
+  },
+  "Section": {
+    "_": {
+      "items": 10
+    },
+    "institution": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "groupProgramName": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "groupProgramId": {
+      "string": ["lorem", "ipsum"]
+    },
+    "sectionName": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 10
+      }
+    },
+    "sectionId": {
+      "string": ["lorem", "ipsum"]
+    },
+    "admissionPeriodId": {
+      "string": ["lorem", "ipsum"]
+    },
+    "admissionPeriodDate": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2023-12-31T23:59:59Z"
+      }
+    },
+    "orderNumber": {
+      "int": {
+        "min": 1,
+        "max": 10
+      }
     }
   }
 }
