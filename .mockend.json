@@ -71,13 +71,13 @@
     "question": {
       "loremSentences": {
         "minLength": 5,
-        "maxLength": 20
+        "maxLength": 100
       }
     },
     "answer": {
       "loremSentences": {
         "minLength": 5,
-        "maxLength": 20
+        "maxLength": 100
       }
     },
     "description": {
@@ -96,9 +96,7 @@
       "boolean": {}
     },
     "choices": {
-      "string": [
-        "{\"data\":[{\"orderNumber\":1,\"label\":\"A\",\"answer\":\"<p>30</p>\",\"answerValue\":\"a\",\"answerKey\":false,},{\"orderNumber\":2,\"label\":\"B\",\"answer\":\"<p>40</p>\",\"answerValue\":\"b\",\"answerKey\":true,},{\"orderNumber\":3,\"label\":\"C\",\"answer\":\"<p>20</p>\",\"answerValue\":\"c\",\"answerKey\":false,}]}"
-      ]
+      "hasMany": "Choice"
     }
   },
   "Choice": {
